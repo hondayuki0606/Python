@@ -1,13 +1,11 @@
 
-poem = '''All that coth flow er cannot liwuid name
-Or else would fire and water be tha same;
-Fire that propetry can never get.
-Then 'tis not cold that doth the fire put out
-But 'tis the wet that makes it die, no doubt, '''
-print(poem)
+#2.3.12 大文字と小文字の区別、配置
+setup = 'a duck goes into a bar...'
+print(setup)
 
-# 手始めに最初の13文字（オフセット）を取り出そう
-print(poem[:13])
+# 両端から.シーケンスを取り除こう
+print(setup.strip(.))
 
-# この詩には何文字含まれているかを取り出そう
-print(len(poem))
+# 先頭のタイトルケース（先頭文字だけ大文字）にしよう
+# A Duck Goes Into A Bar...
+print(setup.capitalize)
